@@ -1,0 +1,17 @@
+type Query {
+    weather(city: String): Weather
+}
+
+type Weather {
+    count: Int
+    data: [WeatherData]
+}
+
+type WeatherData {
+    longitude: Float
+    latitude: Float
+    cityName: String
+    pressure: Int
+    temperature: Float
+    cloudCoverage: Int
+}
